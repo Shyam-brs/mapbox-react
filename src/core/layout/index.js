@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Layout = (props) => {
-
   const { children } = props;
 
   return (
@@ -11,7 +10,7 @@ export const Layout = (props) => {
           <div className="d-flex flex-grow-1">
             <nav className="courseTitle">
               <button className="navbar-brand border-0">
-                <img src={require("../../logo.png")} alt="logo" />
+                <img src={require("../../react-2@2x.png")} alt="logo" />
               </button>
             </nav>
             <div className="flex-grow-1">
@@ -23,17 +22,19 @@ export const Layout = (props) => {
                 <div className="flex-grow-1">
                   <h4>Mapbox API</h4>
                   <p className="pb-0 mb-0">
-                    Purpose: Mapbox API is a location data platform to add maps to the websites and search for places.
+                    Purpose: Mapbox API is a location data platform to add maps
+                    to the websites and search for places.
                   </p>
                 </div>
                 <div className="link me-3">
                   <p className="mb-0 py-0">
                     {" "}
                     <a href="https://www.mapbox.com/">
-                    https://www.mapbox.com/
+                      https://www.mapbox.com/
                     </a>
                     <img
                       src={require("../../noun-link.png")}
+                      alt="logo"
                       className="ms-2"
                     />
                   </p>
@@ -45,19 +46,17 @@ export const Layout = (props) => {
       </header>
 
       <main role="main" className="container-fluid pt-5">
-        <div className="pt-5 mt-3">
-        {children}
-        </div>
+        <div className="pt-5 mt-3">{children}</div>
       </main>
 
       <footer className="footer footer-dark position-fixed">
         <div className="d-flex justify-content-between px-5">
-          <div>ALL RIGHTS RESERVED BRS STUDIO 2022</div>
+          <div>ALL RIGHTS RESERVED 2024</div>
           <div>
-            <img src={require("../../footer-logo.png")} alt="logo" />
+            <img src={require("../../react-2@2x.png")} alt="logo" />
           </div>
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
